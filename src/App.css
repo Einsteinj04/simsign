@@ -1,0 +1,16 @@
+:root{
+    --light-blue: #8ecae6;
+    --navy: #219ebc;
+    --dark-blue: #023047;
+    --light-orange: #ffb703;
+    --dark-orange: #fb8500;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: antiquewhite;
+    scroll-behavior: smooth;
+}

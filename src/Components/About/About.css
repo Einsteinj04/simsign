@@ -1,0 +1,116 @@
+.aboutUs{
+    border: 5px solid var(--light-orange) ;
+    background-color: antiquewhite;
+    scroll-behavior: smooth;
+    /* background-attachment: fixed; */
+
+}
+.about--card{
+    display: flex;
+}
+.bullet--points{
+    font-size: 2.8rem;
+    text-transform: uppercase;
+    color: var(--navy);
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 10px;
+    font-weight: bold;
+    letter-spacing: 1rem;
+    text-align: center;
+     margin-bottom: 2rem;
+}
+.about--image{
+    width: 100%;
+    height: 100vh;;
+    padding: 20px;
+    background: url(./smiling.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.about--p{
+    /* width: 40%; */
+    color: var(--dark-blue);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+    text-align: justify;
+    padding: 50px;
+    background-color: antiquewhite; 
+}
+.services--text{
+    text-align: center;
+    color: var(--dark-orange);
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+}
+.services--cards{
+    width: 90%;
+    height: auto;
+    /* background-color: red; */
+    margin: 2rem auto;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--light-blue);
+    border-radius: 20px;
+    box-shadow: 6px 6px var(--dark-blue);
+    padding: 20px;
+}
+.fa{
+    font-size: 60px;
+    color: var(--dark-blue);
+}
+.fa-globe{
+    font-size: 2rem;
+}
+.service{
+    text-align: center;
+    margin: 2rem;
+    color: var(--dark-blue);
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+.short--text{
+    padding: 15px;
+    line-height: 1.2rem;
+    text-align: center;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: .9rem;
+    letter-spacing: .05rem;
+}
+@media (max-width: 900px){
+    .about--card{
+    flex-direction: column;
+}
+    .about--text{
+        font-size: 2.3rem;
+        margin-bottom: 1rem;
+        padding-top: 5px;
+        letter-spacing: 0.5rem;
+    }
+    .about--image{
+        padding: 0px;
+        background-size: contain;
+        height: 500px;
+    }
+    .about--p{
+        font-size: 18px;
+        padding: 30px;
+    }
+    .services--cards{
+    grid-template-columns: 1fr;
+}
+    .bullet--points{
+        font-size: 2rem;
+        letter-spacing: .5rem;
+    }
+}
